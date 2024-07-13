@@ -1,0 +1,53 @@
+name: "🐛 バグを報告する"
+about: "Create a report to help us improve"
+
+body:
+  - type: markdown
+    attributes:
+      value: |
+        報告ありがとうございます！
+        まずは、Issueの重複を避けるために、あなたが見つけた問題が既に報告されていないか検索してください。
+
+  - type: textarea
+    attributes:
+      label: "🧐 バグの詳細"
+      description: "発生したバグの内容を明確かつ簡潔に記述してください。"
+    validations:
+      required: true
+
+  - type: textarea
+    attributes:
+      label: "🥰 期待される動作"
+      description: "期待していた動作を明確かつ簡潔に記述してください。"
+    validations:
+      required: true
+
+  - type: textarea
+    attributes:
+      label: "📝 バグ発生までの手順"
+      description: |
+        バグが発生するまでの手順を分かる範囲で記述してください。
+      placeholder: |
+        1.
+        2.
+        3.
+    validations:
+      required: false
+
+  - type: textarea
+    attributes:
+      label: "💻 発生環境"
+      description: |
+        どのような環境でバグが発生したのかを分かる範囲で記述してください。
+    validations:
+      required: false
+
+  - type: textarea
+    attributes:
+      label: "🖋️ 補足事項"
+      description: |
+        最後に、関連するリンクや参考資料などがあれば教えてください。
+
+        Tip: このエリアをクリックして選択し、ファイルをドラッグ＆ドロップすることで、画像やログファイルを添付できます。
+    validations:
+      required: false
