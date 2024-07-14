@@ -1,0 +1,33 @@
+name: "✨ 機能を提案する"
+description: "Suggest an idea for this project"
+
+body:
+  - type: markdown
+    attributes:
+      value: |
+        提案ありがとうございます！
+        まずは、Issueの重複を避けるために、あなたのアイデアが既に提案されていないか検索してください。
+
+  - type: textarea
+    attributes:
+      label: "💡 提案の概要"
+      description: "提案の内容を明確かつ簡潔に記述してください。"
+    validations:
+      required: true
+
+  - type: textarea
+    attributes:
+      label: "🥳 提案の目的"
+      description: "この提案が解決する具体的な問題やニーズを説明し、それが誰に役立つかを記述してください。"
+    validations:
+      required: true
+
+  - type: textarea
+    attributes:
+      label: "🖋️ 補足事項"
+      description: |
+        最後に、関連するリンクや参考資料などがあれば教えてください。
+
+        Tip: このエリアをクリックして選択し、ファイルをドラッグ＆ドロップすることで、画像やファイルを添付できます。
+    validations:
+      required: false
